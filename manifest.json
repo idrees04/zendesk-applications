@@ -1,0 +1,27 @@
+{
+  "name": "Customer Intelligence Sidebar",
+  "author": {
+    "name": "Muhammad idrees",
+    "email": "idrees04@yahoo.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "ticket_sidebar": {
+      "url": "assets/iframe.html",
+      "flexible": true
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0",
+  "parameters": [
+    {
+      "name": "api_timeout",
+      "type": "number",
+      "default": 5000
+    }
+  ],
+  "domainWhitelist": [
+    "jsonplaceholder.typicode.com"
+  ]
+}
