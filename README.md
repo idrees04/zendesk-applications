@@ -62,7 +62,7 @@ A comprehensive Zendesk sidebar application built with ZAF v2 and React that pro
    npm run package
    ```
 
-## 📁 Project Structure
+## 📁 zendesk-applications Structure
 
 ```
 ├── manifest.json              # Zendesk app configuration
@@ -174,61 +174,3 @@ The app follows Zendesk Content Security Policy requirements:
 - Firefox 88+
 - Safari 14+
 - Edge 90+
-
-## 🚀 Deployment
-
-### To Zendesk Marketplace
-1. Run `npm run build`
-2. Run `npm run package`
-3. Upload the generated ZIP file to Zendesk
-4. Configure app parameters in Zendesk admin
-
-### Private Installation
-1. Build and package the app
-2. Upload to your Zendesk instance
-3. Install in desired locations (ticket sidebar)
-4. Configure permissions and settings
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-**ZAF Not Loading**
-- Ensure you're accessing from a valid Zendesk ticket
-- Check browser console for errors
-- Verify manifest.json configuration
-
-**API Timeouts**
-- Check network connectivity
-- Increase timeout in manifest.json
-- Verify domain whitelist includes external APIs
-
-**Copy Function Not Working**
-- Ensure HTTPS context (required for clipboard API)
-- Check browser permissions
-- Fallback method available for older browsers
-
-### Debug Mode
-Enable debug logging by opening browser dev tools and setting:
-```javascript
-localStorage.setItem('zaf_debug', 'true');
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-For support and questions:
-- Create an issue in this repository
-- Contact your Zendesk administrator
-- Review Zendesk ZAF v2 documentation
